@@ -34,8 +34,8 @@ def get_kprcnn_model():
 
     num_keypoints = 4
     anchor_generator = AnchorGenerator(sizes=(32, 64, 128, 256, 512), aspect_ratios=(0.25, 0.5, 0.75, 1.0, 2.0, 3.0, 4.0))
-    model = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=False,
-                                                                   pretrained_backbone=True,
+    model = torchvision.models.detection.keypointrcnn_resnet50_fpn(weights=False,
+                                                                   weights_backbone=True,
                                                                    num_keypoints=num_keypoints,
                                                                    num_classes = 2, # Background is the first class, object is the second class
                                                                    rpn_anchor_generator=anchor_generator)

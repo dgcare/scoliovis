@@ -58,7 +58,7 @@ The `src` directory contains code to build the software. Here, you can find the 
    # 5. Download keypointsrcnn_weights and put inside scoliovis\src\backend\models:
    https://github.com/Blankeos/scoliovis-training/releases
 
-   # 6. Run the server on http://localhost:8000
+   # 6. Run the server on http://0.0.0.0:8000
    (venv) D:\scoliovis-api> uvicorn main:app
    ```
 
